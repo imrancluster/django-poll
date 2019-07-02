@@ -1,3 +1,5 @@
+<h2>Login Page</h2>
+
 {% load crispy_forms_tags %}
 
 <div class="message-section">
@@ -16,10 +18,10 @@
         {{ form|crispy }}
     </div>
 
-    <button type="submit">Sign Up</button>
+    <button type="submit">Sign In</button>
 
 
     <div class="sign-in-section">
-        Already have an account? <a href="{% url 'login' %}">Sign In</a>
+        Nee an account? <a href="{% url 'register' %}">Sign Up Now</a>
     </div>
 </form>

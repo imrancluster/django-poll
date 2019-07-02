@@ -48,6 +48,11 @@ class ResultsView(generic.DetailView):
 
 
 # Basic View Implementation
+def front(request):
+    context = {'test': 'test'}
+
+    return render(request, 'polls/home.html', context)
+
 def index(request):
 
     latest_question_list = Question.objects.order_by('-pub_date')[:5]

@@ -1,0 +1,12 @@
+
+<div class="message-section">
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+
+    <h2>You have been logged out</h2>
+    <p><a href="{% url 'login' %}">Log in again</a></p>
+</div>
+
